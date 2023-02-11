@@ -63,7 +63,7 @@ namespace BJJ_Trainer_Assist
                 var services = scope.ServiceProvider;
                 var context = services.GetRequiredService<ApplicationDbContext>();
                 context.Database.EnsureCreated();
-                new DbInitializer(context).Seed();
+                //new DbInitializer(context).Seed();
             }
 
             // Configure the HTTP request pipeline.
