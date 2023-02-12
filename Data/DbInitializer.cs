@@ -22,7 +22,7 @@ namespace BJJ_Trainer_Assist.Data
                     _context.Fighters.AddRange(
                         new Fighter
                         {
-                            Name = "John Doe",
+                            FighterName = "John Doe",
                             Height = 180,
                             Weight = 80,
                             BeltRankId = 3,
@@ -33,7 +33,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Jane Doe",
+                            FighterName = "Jane Doe",
                             Height = 170,
                             Weight = 70,
                             BeltRankId = 12,
@@ -44,7 +44,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Bob Smith",
+                            FighterName = "Bob Smith",
                             Height = 190,
                             Weight = 90,
                             BeltRankId = 9,
@@ -55,7 +55,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Sara Lee",
+                            FighterName = "Sara Lee",
                             Height = 165,
                             Weight = 65,
                             BeltRankId = 1,
@@ -66,7 +66,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Peter Parker",
+                            FighterName = "Peter Parker",
                             Height = 185,
                             Weight = 75,
                             BeltRankId = 24,
@@ -77,7 +77,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Mary Jane",
+                            FighterName = "Mary Jane",
                             Height = 167,
                             Weight = 68,
                             BeltRankId = 12,
@@ -88,7 +88,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Harry Potter",
+                            FighterName = "Harry Potter",
                             Height = 178,
                             Weight = 77,
                             BeltRankId = 8,
@@ -99,7 +99,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Hermione Granger",
+                            FighterName = "Hermione Granger",
                             Height = 170,
                             Weight = 71,
                             BeltRankId = 4,
@@ -110,7 +110,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Ron Weasley",
+                            FighterName = "Ron Weasley",
                             Height = 183,
                             Weight = 78,
                             BeltRankId = 2,
@@ -121,7 +121,7 @@ namespace BJJ_Trainer_Assist.Data
                         },
                         new Fighter
                         {
-                            Name = "Vo Hoan Vu",
+                            FighterName = "Vo Hoan Vu",
                             Height = 161,
                             Weight = 55,
                             BeltRankId = 2,
