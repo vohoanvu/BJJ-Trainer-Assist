@@ -39,7 +39,6 @@ namespace BJJ_Trainer_Assist
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
 
-
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
