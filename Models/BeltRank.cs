@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+
 namespace BJJ_Trainer_Assist.Models
 {
     public class BeltRank
