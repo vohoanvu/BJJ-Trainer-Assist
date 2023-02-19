@@ -96,7 +96,7 @@ namespace BJJ_Trainer_Assist
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseDefaultFiles();
-            app.UseStaticFiles();
+            app.UseStaticFiles("ClientApp");
 
             app.UseHttpsRedirection();
 
