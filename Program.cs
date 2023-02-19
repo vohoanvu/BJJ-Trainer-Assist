@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -38,6 +41,18 @@ namespace BJJ_Trainer_Assist
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+
+            builder.Services.AddMvc(options =>
+            {
+
+                //**************Add General Policy *********************
+                //User need to be a Authorized system user to access pages except allowAnonymous annotation
+                var generalPolicy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                options.Filters.Add(new AuthorizeFilter(generalPolicy));
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
 
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
