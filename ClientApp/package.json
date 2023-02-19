@@ -74,6 +74,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:7248",
-  "homepage": "/BJJ_Trainer_Assist/"
+  "proxy": "https://codejitsuwarrior.azurewebsites.net"
 }
