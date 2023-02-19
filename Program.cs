@@ -96,7 +96,7 @@ namespace BJJ_Trainer_Assist
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseDefaultFiles();
-            app.UseStaticFiles("./wwwroot/");
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 
@@ -112,6 +112,7 @@ namespace BJJ_Trainer_Assist
             app.MapRazorPages();
 
             app.MapFallbackToFile("index.html");
+            app.MapFallbackToController("Index", "Fallback");
 
             app.Run();
         }
