@@ -58,9 +58,6 @@ namespace BJJ_Trainer_Assist
 
             var app = builder.Build();
 
-            app.UseSwagger();
-            app.UseSwaggerUI();
-
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -78,12 +75,15 @@ namespace BJJ_Trainer_Assist
             else
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                //app.UseHsts();
+                app.UseSwagger();
+                app.UseSwaggerUI();
+                app.UseDefaultFiles();
+                app.UseStaticFiles();
             }
 
             app.UseHttpsRedirection();
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
+
             app.UseRouting();
 
             app.UseAuthentication();
