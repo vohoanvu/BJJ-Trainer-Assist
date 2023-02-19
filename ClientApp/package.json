@@ -53,7 +53,7 @@
     "prestart": "node aspnetcore-https && node aspnetcore-react",
     "start": "rimraf ./build && react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "move build ../BJJ_Trainer_Assist/wwwroot",
+    "postbuild": "move build ../wwwroot",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/"
