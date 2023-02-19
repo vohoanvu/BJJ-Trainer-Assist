@@ -74,5 +74,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://codejitsuwarrior.azurewebsites.net"
+  "proxy": "https://localhost:38078"
 }
