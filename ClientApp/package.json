@@ -74,14 +74,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": {
-    "/api/*": {
-      "target": "https://codejitsuwarrior.azurewebsites.net",
-      "secure": false,
-      "headers": {
-        "host": "codejitsuwarrior.azurewebsites.net"
-      },
-      "cookieDomainRewrite": ""
-    }
-  }
+  "proxy": "https://localhost:7248"
 }
