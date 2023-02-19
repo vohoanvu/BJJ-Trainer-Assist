@@ -44,7 +44,7 @@ namespace BJJ_Trainer_Assist
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
                 options.JsonSerializerOptions.WriteIndented = true;
                 options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-            }).AddXmlSerializerFormatters();
+            });
             //Swagger Api configs
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
