@@ -93,7 +93,7 @@ namespace BJJ_Trainer_Assist
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "api/{controller}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
 
             app.MapFallbackToFile("index.html");
