@@ -82,6 +82,7 @@ namespace BJJ_Trainer_Assist
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseRouting();
 
