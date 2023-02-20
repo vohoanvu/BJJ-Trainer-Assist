@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
     <Nullable>enable</Nullable>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
