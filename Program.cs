@@ -55,6 +55,8 @@ namespace BJJ_Trainer_Assist
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
+            builder.Services.AddRazorPages().WithRazorPagesRoot("/Areas/Identity/Pages");
+
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
