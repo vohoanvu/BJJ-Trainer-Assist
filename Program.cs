@@ -33,6 +33,7 @@ namespace BJJ_Trainer_Assist
             builder.Services.AddDefaultIdentity<Fighter>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            builder.Services.AddRazorPages();
 
             builder.Services.AddIdentityServer()
                 .AddApiAuthorization<Fighter, ApplicationDbContext>();
@@ -41,7 +42,7 @@ namespace BJJ_Trainer_Assist
                 .AddIdentityServerJwt();
 
             builder.Services.AddControllersWithViews();
-            builder.Services.AddRazorPages();
+            
 
             builder.Services.AddMvc(options =>
             {
@@ -55,7 +56,6 @@ namespace BJJ_Trainer_Assist
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
-            builder.Services.AddRazorPages().WithRazorPagesRoot("/Areas/Identity/Pages");
 
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
@@ -72,6 +72,17 @@ namespace BJJ_Trainer_Assist
                     Title = "BJJ-Assist API",
                     Version = "v1"
                 });
+            });
+
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.LoginPath = "/Identity/Account/Login";
+                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+                options.SlidingExpiration = true;
             });
 
             var app = builder.Build();
