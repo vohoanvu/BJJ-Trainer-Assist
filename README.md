@@ -28,14 +28,14 @@ The application will run on http://localhost:5000.
 - Access Swagger documentation at http://localhost:5000/swagger/index.html
 - Access React Web UI at http://localhost:5000
 
-#Contributing
+# Contributing
 If you would like to contribute to this project, please follow the steps below:
 
-1.Fork the repository.
-2.Create a new branch for your changes.
-3.Make your changes and commit them with a clear message.
-4.Push your changes to your fork.
-5.Create a pull request to merge your changes with the original repository.
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them with a clear message.
+4. Push your changes to your fork.
+5. Create a pull request to merge your changes with the original repository.
 
 # License
 This project is licensed under the MIT License.
